@@ -300,11 +300,9 @@ service/youtube-clone-service   LoadBalancer   172.20.228.24   adf095793b3fe401e
 
 ### Screenshots
 
-![YouTube Clone Application](docs/screenshots/app-screenshot.png)
-*YouTube Clone running on AWS EKS*
+<img width="1920" height="1011" alt="Screenshot 2026-01-21 at 14 03 07" src="https://github.com/user-attachments/assets/f2d91e04-0636-4c10-8bb2-6dd8d3b254f9" />
 
-![Terminal Deployment Proof](docs/screenshots/terminal-proof.png)
-*Successful deployment verification*
+<img width="1169" height="164" alt="Screenshot 2026-01-21 at 14 03 27" src="https://github.com/user-attachments/assets/35ea95a9-a11d-484e-9ca2-beb5e1de36a7" />
 
 ---
 
