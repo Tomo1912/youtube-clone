@@ -1,6 +1,6 @@
 # 🎥 YouTube Clone - AWS EKS Deployment
 
-[![CI/CD Pipeline](https://github.com/YOUR_USERNAME/YouTube-clone/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/YOUR_USERNAME/YouTube-clone/actions)
+[![CI/CD Pipeline](https://github.com/Tomo1912/YouTube-clone/actions/workflows/ci-cd.yml/badge.svg)](https://github.com/Tomo1912/YouTube-clone/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A production-ready YouTube clone application deployed on **AWS EKS (Elastic Kubernetes Service)** with complete CI/CD pipeline, security scanning, and infrastructure as code.
@@ -102,7 +102,7 @@ Before deploying, ensure you have:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/YouTube-clone.git
+git clone https://github.com/Tomo1912/YouTube-clone.git
 cd YouTube-clone
 ```
 
@@ -270,18 +270,47 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ---
 
-## 📄 License
+## 🎯 Live Deployment
 
-This project is licensed under the MIT License.
+### Application URL
+🌐 **http://adf095793b3fe401e97a14d20d471d5a-1953189031.us-east-1.elb.amazonaws.com**
+
+### Deployment Proof
+
+**Kubernetes Resources:**
+```
+NAME                                READY   STATUS    RESTARTS   AGE
+pod/youtube-clone-c8c94b86d-dbzvn   1/1     Running   0          7m
+pod/youtube-clone-c8c94b86d-p4bkb   1/1     Running   0          6m
+
+NAME                            TYPE           CLUSTER-IP      EXTERNAL-IP                                                               PORT(S)
+service/youtube-clone-service   LoadBalancer   172.20.228.24   adf095793b3fe401e97a14d20d471d5a-1953189031.us-east-1.elb.amazonaws.com   80:30612/TCP
+```
+
+**Health Check Response:**
+```json
+{
+  "status": "healthy",
+  "timestamp": "2026-01-21T12:15:09.118Z",
+  "service": "YouTube Clone API"
+}
+```
+
+**Docker Image:** `410293310465.dkr.ecr.us-east-1.amazonaws.com/youtube-clone:latest`
+
+### Screenshots
+
+![YouTube Clone Application](docs/screenshots/app-screenshot.png)
+*YouTube Clone running on AWS EKS*
+
+![Terminal Deployment Proof](docs/screenshots/terminal-proof.png)
+*Successful deployment verification*
 
 ---
 
-## 👨‍💻 Author
+## 📄 License
 
-**Tomislav Martic**
-
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-- GitHub: [@yourusername](https://github.com/yourusername)
+This project is licensed under the MIT License.
 
 ---
 

@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: youtube-clone
-        image: shavers93/youtube-clone:latest
+        image: 410293310465.dkr.ecr.us-east-1.amazonaws.com/youtube-clone:latest
         imagePullPolicy: Always
         ports:
         - containerPort: 3000
@@ -69,7 +69,6 @@ spec:
     port: 80
     targetPort: 3000
     protocol: TCP
-  sessionAffinity: ClientIP
 ---
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
